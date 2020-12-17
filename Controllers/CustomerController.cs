@@ -30,18 +30,6 @@ namespace ExampleProject1.Controllers
             return await _context.Customer.ToListAsync();
         }
 
-        [HttpGet]
-        [ODataRoute("Customer({id})")]
-        public async Task<ActionResult<Customer>> GetCustomer(int id)
-        {
-            var customer = await _context.Customer.FindAsync(id);
 
-            if (customer == null)
-            {
-                return NotFound();
-            }
-
-            return customer;
-        }
     }
 }
