@@ -1,6 +1,6 @@
 # .NetCore5-EF-OData-Example
 
-Example project to get started working with:
+Sample implementation to get started working with:
 - .Net Core 5.0 Web API
 - Entity Framework Core
 - Sql Server Express LocalDB
